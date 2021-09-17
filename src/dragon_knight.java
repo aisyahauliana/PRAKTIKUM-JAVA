@@ -5,11 +5,11 @@ public class dragon_knight  {
         System.out.println("PROGRAM JAVA IMPLEMENTASI DRAGON KNIGHT");
         System.out.println("===================================");
 
-        int[] knight = { 5 };
+        int[] knight = { 5,4 };
         Arrays.sort(knight);
         int N = 0;
 
-        int[] dragon = { 5,10 };
+        int[] dragon = { 7,8,4 };
         Arrays.sort(dragon);
         int indeksD  = 0;
         for (int x : knight ){

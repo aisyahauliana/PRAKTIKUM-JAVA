@@ -8,7 +8,6 @@ public class bilangan_prima {
         System.out.println("PROGRAM JAVA MENENTUKAN BILANGAN PRIMA");
         System.out.println("======================================");
         System.out.print("Masukkan Angka: ");
-
         int angka = input.nextInt();
         boolean prima = true;
 
@@ -18,7 +17,6 @@ public class bilangan_prima {
                 prima = false;
                 break;
             }
-
         }
 
         if(prima && (angka > 1 ))
