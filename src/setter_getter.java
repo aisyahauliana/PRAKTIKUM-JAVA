@@ -3,15 +3,20 @@ public class setter_getter {
     public static void main(String[] args) {
 
         class Pengurus {
+            String namaPengurus;
             int idPengurus;
             String gender;
             String divisi;
             String jabatan;
+            boolean adaProker;
+            int jumlahProker;
+            boolean statusAktif;
+            String periode;
 
-            public Pengurus(int a, String b, String c) {
-                idPengurus = a;
-                gender = b;
-                divisi = c;
+            public Pengurus(String a, int b, String c) {
+                namaPengurus = a;
+                idPengurus = b;
+                gender = c;
             }
 
             public void setJabatan(String x) {
@@ -23,25 +28,37 @@ public class setter_getter {
             }
         }
         //inisialisasi objek
-        Pengurus Aisyah = new Pengurus(001, "Perempuan", "PSDM");
+        Pengurus pengurus1 = new Pengurus("Aisyah", 001,"Perempuan");
+        Pengurus pengurus2 = new Pengurus("Amara",002,"Perempuan");
+        Pengurus pengurus3 = new Pengurus("Abel", 003, "Laki-laki");
+        Pengurus pengurus4 = new Pengurus("Dikta",004, "Laki-laki");
+        Pengurus pengurus5 = new Pengurus("Sastra", 005,"Laki-laki");
 
         //memanggil setter method
-        Aisyah.setJabatan("anggota divisi PSDM");
-        System.out.println(Aisyah.jabatan);
+        pengurus1.setJabatan("anggota divisi PSDM");
+        System.out.println(pengurus1.jabatan);
 
         //memanggil getter method
-        System.out.println(Aisyah.getJabatan());
+        System.out.println(pengurus1.getJabatan());
 
         class Ormawa {
             String universitas;
+            String namaOrmawa;
             int jumlahDivisi;
-            int jumlahPengurus;
+            Pengurus pengurus1;
+            Pengurus pengurus2;
+            Pengurus pengurus3;
+            Pengurus pengurus4;
+            Pengurus pengurus5;
+            boolean prokerOngoing;
             String namaProker;
+            int jumlahProker;
+            boolean periodeDibuka;
 
             public Ormawa(String n, int m, int p) {
                 universitas = n;
                 jumlahDivisi = m;
-                jumlahPengurus = p;
+                jumlahProker = p;
 
             }
 
@@ -58,7 +75,7 @@ public class setter_getter {
         Ormawa HIMASIF = new Ormawa("UNEJ", 2, 5);
 
         //memanggil setter method
-        HIMASIF.setProker("IT Convert");
+        HIMASIF.setProker("Serigala Sistem Informasi (SSI)");
         System.out.println(HIMASIF.namaProker);
 
         //memanggil getter method
